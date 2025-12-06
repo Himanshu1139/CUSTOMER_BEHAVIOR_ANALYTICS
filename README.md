@@ -1,12 +1,13 @@
 # CUSTOMER_BEHAVIOR_ANALYTICS
 Customer Behavior Analysis using Python 🐍 (Pandas), PostgreSQL 🐘, and Power BI 📊. Cleaned data, engineered features, answered business questions with SQL, and built an interactive dashboard. Final insights and presentation created using Gamma AI 💡 for clear storytelling.
 
-Customer Shopping Behavior Analysis – README
-📌 Overview
 
-This project analyzes 3,900+ customer purchase records to understand shopping behavior, spending patterns, product preferences, and subscription trends. The goal is to uncover insights that support better marketing strategies, product decisions, and customer retention efforts. The workflow includes Python (Pandas), PostgreSQL SQL analysis, Power BI dashboarding, and reporting with Gamma AI.
+📌**Overview**
 
-📁 Dataset
+This project analyzes 3,900+ customer shopping transactions to uncover insights related to spending behavior, product preferences, subscription patterns, and customer segmentation.
+It uses Python (Pandas) for data cleaning, PostgreSQL for business queries, and Power BI for dashboard creation. A final report was built using Gamma AI.
+
+📁**Dataset**
 
 Rows: 3,900
 
@@ -14,101 +15,108 @@ Columns: 18
 
 Includes:
 
-Customer demographics (Age, Gender, Location, Subscription Status)
+Demographics (Age, Gender, Location, Subscription Status)
 
-Product & purchase details (Item, Category, Amount, Season, Size, Color)
+Purchase details (Item, Category, Amount, Season, Size, Color)
 
-Behavioral data (Discounts, Promo Code, Review Rating, Shipping Type, Frequency)
+Behavior fields (Discount, Review Rating, Shipping Type, Previous Purchases)
 
-Missing Data: 37 missing values in Review Rating → imputed using median rating per category
+Missing Values: 37 review ratings → imputed using median by category
 
-🛠 Tools & Technologies
+🛠️ Tools & Technologies
 
-Python (Pandas) – Data cleaning, preprocessing, feature engineering
+Python: Pandas, NumPy
 
-PostgreSQL – SQL analysis & business insights
+SQL: PostgreSQL
 
-Power BI – Dashboard creation
+Visualization: Power BI
 
-Gamma AI – Final reporting & presentation
+Reporting: Gamma AI
 
-Jupyter Notebook / VS Code – Development environment
+Environment: Jupyter Notebook / VS Code
 
-🔧 Steps Performed
-1. Data Cleaning & Feature Engineering (Python)
+🔧 **Steps Performed**
 
-Loaded and explored dataset
+1️⃣ **Data Cleaning & Feature Engineering (Python)**
+
+Loaded and inspected dataset
 
 Standardized column names
 
-Imputed missing ratings
+Handled missing values
 
-Created age_group and purchase_frequency_days
+Engineered features:
 
-Removed redundant fields (promo_code_used)
+age_group
+
+purchase_frequency_days
+
+Dropped redundant fields
 
 Loaded cleaned data into PostgreSQL
 
-2. Business Analysis (SQL in PostgreSQL)
+2️⃣**SQL Business Analysis (PostgreSQL)**
 
-Answered key business questions including:
+Answered key questions:
 
 Revenue by gender
 
 High-spending discount users
 
-Top 5 highest-rated products
+Top-rated products
 
-Standard vs Express shipping spend
+Standard vs Express shipping revenue
 
-Subscriber vs non-subscriber revenue
+Subscribers vs non-subscribers
 
-Discount-dependent products
+Discount-heavy products
 
 Customer segmentation (New, Returning, Loyal)
 
-Top products per category
+Top 3 products per category
 
-Repeat buyers & subscription patterns
+Repeat buyers vs subscription
 
-Revenue by age group
+Revenue contribution by age group
 
-3. Dashboard (Power BI)
+3️⃣ **Dashboard (Power BI)**
 
-Interactive visuals including:
+Dashboard includes:
 
-KPIs (Total Revenue, Avg Spend, Subscriber Revenue)
+Revenue KPIs
 
-Best products & categories
+Age & gender analysis
 
-Age-group and region-wise revenue
+Product & category insights
 
-Shipping type comparison
+Customer segments
 
-Customer segments (New, Returning, Loyal)
+Shipping comparison
 
-📈 Results
+Interactive filters/slicers
 
-Identified high-value customer groups
+📈 Results & Insights
 
-Highlighted bestselling and top-rated products
+Identified top-performing products and categories
 
-Found strong links between loyalty & subscriptions
+Found strong relationship between loyalty and subscription behavior
 
-Identified discount-heavy categories
+Highlighted discount-dependent categories
 
-Revealed spending differences across gender, age, and shipping type
+Discovered spending differences across age and gender
 
-▶️ How to Run
+Identified high-value customer segments for targeting
+
+▶️ **How to Run**
 
 Clone the repository
 
-Open notebook and run Python script for cleaning & feature engineering
+Run the Python notebook for data cleaning
 
 Load cleaned data into PostgreSQL
 
-Execute SQL queries for insights
+Execute SQL scripts for insights
 
-Open Power BI file to view interactive dashboard
+Open the Power BI dashboard
 
-Refer to Gamma AI report for final summary & recommendations
+View final insights in Gamma AI report
